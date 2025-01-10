@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Homepage Content</h1>
+    <ul>
+        {% for item in homepage_data %}
+            <li>{{ item.text }} — {{ item.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
